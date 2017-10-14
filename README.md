@@ -20,18 +20,18 @@ Put it on your PATH somewhere. Or don't. See if I care!
 Straight ouf ot `-h`, have fun.
 
 ```
-    Show hexdump for unicode strings, after encoding them (#{ENC_DEFAULT}
-    by default), suitable for hexing pokemon names (i.e. in PKSM) or for
-    whatever other reason you want a hexdump of encoded strings I guess.
+    Show hexdump for unicode strings, after encoding them (UTF-16LE
+    by default), suitable for hex editing pokemon names (i.e. in PKSM) or for
+    whatever other reason you want a hexdump of encoded unicode strings I guess.
 
     Usage:
-      #{$0} [-h|--help]     you're looking at it
-      #{$0} [STRING ...]    show hexpairs for STRINGs
-      #{$0} -               read strings from STDIN
+      pokenamehex [-h|--help]     you're looking at it
+      pokenamehex [STRING ...]    show hexpairs for STRINGs
+      pokenamehex -               read strings from STDIN
 
     ENV vars:
-      BUF_LEN               buffer length (default #{LEN_DEFAULT} bytes)
-      ENCODING              encoding (default #{ENC_DEFAULT}, see Ruby encoding names)
+      BUF_LEN               buffer length (default 24 bytes)
+      ENCODING              encoding (default UTF-16LE, see Ruby encoding names)
 ```
 
 ### Examples
