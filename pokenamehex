@@ -27,15 +27,16 @@ def dump_one(s)
 end
 
 def show_help
+  prog = File.basename($0)
   STDERR.puts <<-END
     Show hexdump for unicode strings, after encoding them (#{ENC_DEFAULT}
     by default), suitable for hexing pokemon names (i.e. in PKSM) or for
     whatever other reason you want a hexdump of encoded strings I guess.
 
     Usage:
-      #{$0} [-h|--help]     you're looking at it
-      #{$0} [STRING ...]    show hexpairs for STRINGs
-      #{$0} -               read strings from STDIN
+      #{prog} [-h|--help]     you're looking at it
+      #{prog} [STRING ...]    show hexpairs for STRINGs
+      #{prog} -               read strings from STDIN
 
     ENV vars:
       BUF_LEN               buffer length (default #{LEN_DEFAULT} bytes)
