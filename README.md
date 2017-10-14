@@ -15,7 +15,8 @@ extraneous stuff.
 
 ### Usage
 
-Put it on your PATH somewhere. Or don't. See if I care!
+Put it on your PATH somewhere. Or don't and run it like `./pokenamehex` or whatever.
+See if I care!
 
 Straight ouf ot `-h`, have fun.
 
